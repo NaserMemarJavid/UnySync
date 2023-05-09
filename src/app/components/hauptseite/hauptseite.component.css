@@ -1,0 +1,134 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+/*
+.header {
+    background-color: rgb(148, 133, 133);
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}*/
+
+.headerlink {
+    display: flex;
+    position: absolute;
+    align-content: center;
+    width: 50%;
+    height: 10%;
+}
+
+#logo {
+    margin: 2%;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.headerright {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 50%;
+    height: 10%;
+    left: 50%;
+
+}
+
+#buttons {
+    width: 100%;
+    padding-left: 20%;
+}
+
+.headerright button {
+    background-color: #E1A3D4;
+    margin-left: 2%;
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    font-size: large;
+}
+
+
+
+
+.text {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    padding-top: 1%;
+    padding-left: 8%;
+}
+
+.text p {
+    font-size: 3em;
+
+    line-height: 0.5em;
+}
+
+#p2 {
+    position: relative;
+    padding-left: 3%;
+}
+
+#p3 {
+    position: relative;
+    padding-left: 6%;
+}
+
+
+.photo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+}
+
+.photo img {
+    position: absolute;
+    width: 90%;
+    border-radius: 20%;
+    left: 5%;
+    top: -20%;
+}
+
+
+.signs {
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signbuttons {
+    width: 50%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signbuttons button {
+    background-color: #E1A3D4;
+    margin-left: 5%;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: large;
+
+}
+
+
+/*
+*/
