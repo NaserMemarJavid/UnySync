@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+.headerlink {
+    display: flex;
+    position: absolute;
+    align-content: center;
+    width: 50%;
+    height: 10%;
+}
+
+#logo {
+    margin: 2%;
+    width: 50%;
+    border-radius: 10px;
+}
