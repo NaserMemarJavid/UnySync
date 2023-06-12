@@ -1,0 +1,63 @@
+.leftmenu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 20%;
+    left: 3%;
+
+}
+
+.leftmenu button {
+    background-color: #E1A3D4;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    font-size: large;
+    width: 150px;
+}
+
+.main {
+    display: flex;
+    position: absolute;
+    left: 1%;
+    top: 9%;
+    width: 98%;
+    height: 89vh;
+    background-color: #71BECE;
+}
+
+
+
+/* Content ----------------------------------------------------*/
+.content {
+    position: absolute;
+    background-color: antiquewhite;
+    top: 10%;
+    left: 15%;
+    height: 79vh;
+    width: 80%;
+    overflow: auto;
+
+}
+
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+.content th {
+    font-size: 120%;
+}
+
+.content td,
+.content th {
+    border: 2px solid white;
+    padding: 5px;
+    text-align: center;
+}

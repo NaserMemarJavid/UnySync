@@ -1,34 +1,35 @@
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { LosgehtesComponent } from './components/losgehtes/losgehtes.component';
 import { HeaderComponent } from './components/header/header.component';
-import { HauptseiteComponent } from './components/hauptseite/hauptseite.component';
-import { GetstartedComponent } from './components/getstarted/getstarted.component';
-import { RouterModule, Routes } from '@angular/router';
+import { MaintoolsComponent } from './components/maintools/maintools.component';
+import { StudienverlaufsplanComponent } from './components/studienverlaufsplan/studienverlaufsplan.component';
+import { StundenplanComponent } from './components/stundenplan/stundenplan.component';
 import { PassvergessenComponent } from './components/passvergessen/passvergessen.component';
 
-
-const appRoutes: Routes = [
-
-  { path: '', component: HauptseiteComponent },
-  { path: 'getstarted', component: GetstartedComponent },
-  { path: 'passvergessen', component: PassvergessenComponent }
-
-];
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomepageComponent,
+    LosgehtesComponent,
     HeaderComponent,
-    HauptseiteComponent,
-    GetstartedComponent,
+    MaintoolsComponent,
+    StudienverlaufsplanComponent,
+    StundenplanComponent,
     PassvergessenComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
