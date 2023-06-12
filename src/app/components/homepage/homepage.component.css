@@ -4,6 +4,7 @@
     height: 900px;
 }
 
+
 .text {
     position: absolute;
     top: 18%;
@@ -16,7 +17,7 @@
 
 .text p {
     font-size: 3em;
-    line-height: 0.5em;
+    line-height: 1em;
 }
 
 #p2 {

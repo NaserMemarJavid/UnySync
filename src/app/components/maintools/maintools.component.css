@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #086375;
+    overflow: auto;
+}
+
+.topmenu {
+    position: absolute;
+    display: flex;
+    top: 3%;
+    left: 50%;
+}
+
+.topmenu button {
+    background-color: #E1A3D4;
+    margin-left: 20%;
+    border-radius: 10px;
+    font-size: 150%;
+}
