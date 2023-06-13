@@ -22,7 +22,7 @@ export class LosgehtesComponent {
     let bodyData = {
       "email": this.email,
       "user": this.user,
-      "pasword": this.password
+      "password": this.password
     };
     this.http.post("https://www.efcet.de/node/v1/register", bodyData, { responseType: 'text' }).subscribe((rsultData: any) => {
       console.log(rsultData);
