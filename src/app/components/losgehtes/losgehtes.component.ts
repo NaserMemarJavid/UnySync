@@ -1,5 +1,7 @@
+import { AccountService } from './../../account.service';
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-losgehtes',
@@ -9,29 +11,49 @@ import { Component } from '@angular/core';
 export class LosgehtesComponent {
 
   email: string = "";
-  username: string = "";
+  user: string = "";
   password: string = "";
 
   constructor(private http: HttpClient) {
 
   }
-  ngOnInit(): void {
 
-  }
-
-  register() {
+  onSignUp() {
     let bodyData = {
       "email": this.email,
-      "username": this.username,
-      "password": this.password
+      "user": this.user,
+      "pasword": this.password
     };
-    this.http.post("https://www.efcet.de/node/v1/register", bodyData).subscribe((resultData: any) => {
-      console.log(resultData);
-      alert("Reg. Wer Erfolgreich")
+    this.http.post("https://www.efcet.de/node/v1/register", bodyData, { responseType: 'text' }).subscribe((rsultData: any) => {
+      console.log(rsultData);
+      alert(" reg ist erfolgreich! ");
     });
+
+
+
   }
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
