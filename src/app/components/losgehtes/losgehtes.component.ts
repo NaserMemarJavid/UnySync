@@ -24,14 +24,16 @@ export class LosgehtesComponent {
       "user": this.user,
       "password": this.password
     };
-    this.http.post("https://www.efcet.de/node/v1/register", bodyData, { responseType: 'text' }).subscribe((rsultData: any) => {
-      console.log(rsultData);
+    this.http.post("https://www.efcet.de/node/v1/register", bodyData, { responseType: 'text' }).subscribe((resultData: any) => {
+      console.log(resultData.headers.get('authorization'));
       alert(" reg ist erfolgreich! ");
     });
 
 
 
   }
+
+
 
 
 }
