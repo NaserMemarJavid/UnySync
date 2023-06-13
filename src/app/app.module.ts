@@ -12,7 +12,8 @@ import { StundenplanComponent } from './components/stundenplan/stundenplan.compo
 import { PassvergessenComponent } from './components/passvergessen/passvergessen.component';
 
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { AccountInterceptor } from './account.interceptor';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,11 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS, useClass: AccountInterceptor,
+    multi: true
+  }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
