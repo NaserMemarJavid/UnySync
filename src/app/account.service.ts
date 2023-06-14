@@ -10,11 +10,7 @@ export class AccountService {
   constructor(private http: HttpClient) { }
 
   onLogIn(obj: any): Observable<any> {
-    return this.http.post('', obj);
+    return this.http.post('https://www.efcet.de/node/v1/login', obj);
   }
 
-  getData(): Observable<any> {
-
-    return this.http.get('');
-  }
 }

@@ -11,20 +11,18 @@
         </div>
         <div class="form">
             <form> <!--</form>action="/node/v1/register" method="post"> --->
-                <label for="email">E-Mail-Adresse:</label>
-                <input type="email" [(ngModel)]="email" id="email" name="email" required><br><br>
 
                 <label for="username">Benutzername:</label>
-                <input type="text" [(ngModel)]="user" id="user" name="user" required><br><br>
+                <input type="text" id="user" name="user" [(ngModel)]="loginObj.user" required><br><br>
 
                 <label for="password">Passwort:</label>
-                <input type="password" [(ngModel)]="password" id="password" name="password" required><br><br>
+                <input type="password" id="password" name="password" [(ngModel)]="loginObj.password" required><br><br>
                 <!--
                 <input type="submit" value="Anmelden">
                 <input type="submit" (click)="register()" value="Register">
                 -->
-                <button type="submit" (click)="onSignUp()"> Register</button>
-                <button routerLink="/login"> Schon registered</button>
+                <button type="submit" (click)="onLogIn()"> Anmelden</button>
+                <button routerLink="/losgehtes"> nicht registered</button>
             </form>
             <div id="passvergessen">
                 <a routerLink="/passvergessen"> Passwort vergessen?</a>
@@ -32,7 +30,6 @@
         </div>
 
     </div>
-
 
     <div class="icons">
         <img id="icon1" src="../../../assets/icon1.jpg" alt="icon1">

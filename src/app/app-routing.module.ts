@@ -11,6 +11,7 @@ import { PassvergessenComponent } from './components/passvergessen/passvergessen
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'maintools', component: MaintoolsComponent },
   { path: 'studienverlaufsplan', component: StudienverlaufsplanComponent },
   { path: 'passvergessen', component: PassvergessenComponent },
-  { path: 'stundenplan', component: StundenplanComponent }
+  { path: 'stundenplan', component: StundenplanComponent },
+  { path: 'login', component: LoginComponent }
 
 ];
 

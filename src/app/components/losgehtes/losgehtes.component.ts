@@ -14,7 +14,7 @@ export class LosgehtesComponent {
   user: string = "";
   password: string = "";
 
-  constructor(private http: HttpClient) {
+  constructor(private router: Router, private http: HttpClient) {
 
   }
 
@@ -25,20 +25,21 @@ export class LosgehtesComponent {
       "password": this.password
     };
     this.http.post("https://www.efcet.de/node/v1/register", bodyData, { observe: 'response' }).subscribe(resp => {
-      console.log(resp.headers.get('authorization'));
-      alert(" reg ist erfolgreich! ");
+
+      if (resp.status) {
+        console.log(resp.headers.get('authorization'));
+        alert(" reg ist erfolgreich! ");
+        this.router.navigateByUrl('/login');
+      }
+      else {
+        alert("Incorrect Email or Pass!!");
+        console.log("Error login!!!!");
+      }
     });
 
 
 
   }
-
-
-  onSignIn() {
-
-  }
-
-
 
 
 }

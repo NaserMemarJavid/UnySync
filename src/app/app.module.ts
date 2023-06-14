@@ -14,6 +14,7 @@ import { PassvergessenComponent } from './components/passvergessen/passvergessen
 import { FormsModule } from '@angular/forms';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AccountInterceptor } from './account.interceptor';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AccountInterceptor } from './account.interceptor';
     MaintoolsComponent,
     StudienverlaufsplanComponent,
     StundenplanComponent,
-    PassvergessenComponent
+    PassvergessenComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
