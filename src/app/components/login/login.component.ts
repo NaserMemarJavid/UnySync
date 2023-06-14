@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit {
   onLogIn() {
     this.accService.onLogIn(this.loginObj).subscribe((res: any) => {
       console.log('res', res)
-      localStorage.setItem('token', res.headers.get('authorization'));
+      localStorage.setItem('token', res.token);
       this.route.navigateByUrl('/maintools');
     })
 
