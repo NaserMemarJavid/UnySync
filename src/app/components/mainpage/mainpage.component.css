@@ -19,3 +19,27 @@
     border-radius: 10px;
     font-size: 150%;
 }
+
+.main {
+    display: flex;
+    position: absolute;
+    left: 1%;
+    top: 9%;
+    width: 98%;
+    height: 89vh;
+    background-color: #71BECE;
+}
+
+
+
+/* Content ----------------------------------------------------*/
+.content {
+    position: absolute;
+    background-color: antiquewhite;
+    top: 10%;
+    left: 15%;
+    height: 79vh;
+    width: 80%;
+    overflow: auto;
+
+}
