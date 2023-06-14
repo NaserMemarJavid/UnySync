@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class StudienverlaufsplanComponent {
 
+  hideRow(rowId: string) {
+    const row = document.getElementById(rowId) as HTMLElement;
+    if (row) {
+      row.style.display = 'none';
+    }
+  }
+
 }

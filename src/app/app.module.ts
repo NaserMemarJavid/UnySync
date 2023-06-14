@@ -15,6 +15,8 @@ import { FormsModule } from '@angular/forms';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AccountInterceptor } from './account.interceptor';
 import { LoginComponent } from './components/login/login.component';
+import { MainpageComponent } from './components/mainpage/mainpage.component';
+import { StudienverlaufsplanemptyComponent } from './components/studienverlaufsplanempty/studienverlaufsplanempty.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { LoginComponent } from './components/login/login.component';
     StudienverlaufsplanComponent,
     StundenplanComponent,
     PassvergessenComponent,
-    LoginComponent
+    LoginComponent,
+    MainpageComponent,
+    StudienverlaufsplanemptyComponent
   ],
   imports: [
     BrowserModule,
