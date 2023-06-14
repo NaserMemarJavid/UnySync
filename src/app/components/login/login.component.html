@@ -10,17 +10,13 @@
             </h1>
         </div>
         <div class="form">
-            <form> <!--</form>action="/node/v1/register" method="post"> --->
+            <form>
 
                 <label for="username">Benutzername:</label>
                 <input type="text" id="user" name="user" [(ngModel)]="loginObj.user" required><br><br>
 
                 <label for="password">Passwort:</label>
                 <input type="password" id="password" name="password" [(ngModel)]="loginObj.password" required><br><br>
-                <!--
-                <input type="submit" value="Anmelden">
-                <input type="submit" (click)="register()" value="Register">
-                -->
                 <button type="submit" (click)="onLogIn()"> Anmelden</button>
                 <button routerLink="/losgehtes"> nicht registered</button>
             </form>
